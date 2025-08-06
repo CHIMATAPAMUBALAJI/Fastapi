@@ -1,0 +1,67 @@
+/* Splitter Styles for AG Grid and PDF Layout */
+
+/* Main splitter container */
+.react-splitter {
+  height: 100%;
+  width: 100%;
+}
+
+/* Splitter bar styling */
+.react-splitter-bar {
+  background: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+  border-left: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  cursor: col-resize;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for splitter */
+.react-splitter-bar:hover {
+  background: linear-gradient(90deg, #e8e8e8 0%, #d8d8d8 50%, #e8e8e8 100%);
+}
+
+/* Active/dragging state */
+.react-splitter-bar:active {
+  background: linear-gradient(90deg, #d0d0d0 0%, #c0c0c0 50%, #d0d0d0 100%);
+}
+
+/* Add a subtle grip indicator */
+.react-splitter-bar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 30px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #999 0px,
+    #999 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  border-radius: 1px;
+}
+
+/* Pane styling */
+.splitter-pane {
+  height: 100%;
+  overflow: hidden;
+}
+
+.splitter-pane-left {
+  border-right: 1px solid #e0e0e0;
+}
+
+.splitter-pane-right {
+  border-left: 1px solid #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .react-splitter-bar {
+    width: 8px; /* Slightly wider on mobile for easier touch */
+  }
+}

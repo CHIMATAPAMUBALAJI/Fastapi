@@ -1,0 +1,36 @@
+Light Blue AgGrid Theme Override
+.ag-theme-balham {
+  --ag-background-color: #e3f2fd;
+  --ag-header-background-color: #90caf9;
+  --ag-header-foreground-color: #1565c0;
+  --ag-row-background-color: #f3f9ff;
+  --ag-odd-row-background-color: #e8f4fd;
+  --ag-row-hover-color: #bbdefb;
+  --ag-selected-row-background-color: #64b5f6;
+}
+
+.ag-theme-balham .ag-header {
+  background-color: #90caf9 !important;
+}
+
+.ag-theme-balham .ag-header-cell {
+  background-color: #90caf9 !important;
+  color: #1565c0 !important;
+  font-weight: bold !important;
+}
+
+.ag-theme-balham .ag-row {
+  background-color: #f3f9ff !important;
+}
+
+.ag-theme-balham .ag-row-odd {
+  background-color: #e8f4fd !important;
+}
+
+.ag-theme-balham .ag-row:hover {
+  background-color: #bbdefb !important;
+}
+
+.ag-theme-balham .ag-row-selected {
+  background-color: #64b5f6 !important;
+}
